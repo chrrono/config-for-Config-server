@@ -5,4 +5,4 @@ spring:
                 - id: employees
                   uri: lb://peopleops
                   predicates:
-                    - Path=/employees/v2
+                    - Path=/employees
