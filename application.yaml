@@ -3,6 +3,6 @@ spring:
         gateway:
             routes:
                 - id: employees
-                  uri: peopleOps
+                  uri: peopleops
                   predicates:
                     - Path=/employees
