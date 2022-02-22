@@ -1,8 +1,10 @@
-spring:
-    cloud:
-        gateway:
-            routes:
-                - id: employees
-                  uri: lb://peopleops
-                  predicates:
-                    - Path=/employees
+    spring:
+        cloud:
+            gateway:
+                routes:
+                    - id: employees
+                      uri: lb://peopleops
+                      predicates:
+                        - Path=/employees
+                      filters:
+                        - RewritePath=/employees, /employees/v1   
